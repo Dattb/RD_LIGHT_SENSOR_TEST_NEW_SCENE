@@ -1,0 +1,236 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "version": "1.0.0",
+    "id": "http://www.bluetooth.com/specifications/assigned-numbers/mesh-profile/cdb-schema.json#",
+    "meshUUID": "00000000000000000000000000000000",
+    "meshName": "telink_test_room",
+    "timestamp": "2018-12-23T11:45:22-08:00",
+    "netKeys": [
+        {
+            "name": "",
+            "key": "206c7f89a0b3bdd4def12f71a5b9c2d9",
+            "oldKey": "00000000000000000000000000000000",
+            "minSecurity": "secure",
+            "index": 0,
+            "phase": 0
+        },
+        {
+            "name": "",
+            "key": "98c3cde4ed011822354c56698abe063a",
+            "oldKey": "00000000000000000000000000000000",
+            "minSecurity": "secure",
+            "index": 0,
+            "phase": 0
+        }
+    ],
+    "appKeys": [
+        {
+            "name": "",
+            "index": 0,
+            "boundNetKey": 0,
+            "key": "00000000000000000000000000000000",
+            "oldKey": "00000000000000000000000000000000"
+        }
+    ],
+    "provisioners": [
+        {
+            "provisionerName": "Telink provisioner ",
+            "UUID": "fffbebbfa90603000000000000000000",
+            "allocatedGroupRange": [
+                {
+                    "highAddress": "c0ff",
+                    "lowAddress": "c000"
+                }
+            ],
+            "allocatedUnicastRange": [
+                {
+                    "highAddress": "03ff",
+                    "lowAddress": "0001"
+                }
+            ],
+            "allocatedSceneRange": [
+                {
+                    "firstScene": "0001",
+                    "lastScene": "000f"
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "UUID": "fffbebbfa90603000000000000000000",
+            "macAddress": "000000000000",
+            "name": "",
+            "deviceKey": "fffbebbfa9060300529049f1f1bbe9eb",
+            "unicastAddress": "0001",
+            "sno": "00000081",
+            "security": "secure",
+            "cid": "0000",
+            "pid": "0101",
+            "vid": "3233",
+            "crpl": "03e8",
+            "features": {
+                "relay": 0,
+                "proxy": 0,
+                "friend": 0,
+                "lowPower": 0
+            },
+            "relayRetransmit": {
+                "count": 5,
+                "interval": 30
+            },
+            "networkTransmit": {
+                "count": 5,
+                "interval": 30
+            },
+            "netKeys": [
+                {
+                    "index": 0,
+                    "updated": false
+                }
+            ],
+            "appKeys": [
+                {
+                    "index": 0,
+                    "updated": false
+                }
+            ],
+            "elements": [],
+            "secureNetworkBeacon": true,
+            "configComplete": false,
+            "blacklisted": false,
+            "defaultTTL": 10
+        },
+        {
+            "UUID": "e3100ab8ebfc5436b8a032d4f29ab78b",
+            "macAddress": "a4c138e4df25",
+            "name": "",
+            "deviceKey": "e40c250cebbebab8e462742b6229fb22",
+            "unicastAddress": "0002",
+            "sno": "00000000",
+            "security": "secure",
+            "cid": "0000",
+            "pid": "0000",
+            "vid": "0000",
+            "crpl": "0000",
+            "features": {
+                "relay": 0,
+                "proxy": 0,
+                "friend": 0,
+                "lowPower": 0
+            },
+            "relayRetransmit": {
+                "count": 5,
+                "interval": 30
+            },
+            "networkTransmit": {
+                "count": 5,
+                "interval": 30
+            },
+            "netKeys": [
+                {
+                    "index": 0,
+                    "updated": false
+                }
+            ],
+            "appKeys": [
+                {
+                    "index": 0,
+                    "updated": false
+                },
+                {
+                    "index": 0,
+                    "updated": false
+                }
+            ],
+            "elements": [],
+            "secureNetworkBeacon": true,
+            "configComplete": true,
+            "blacklisted": false,
+            "defaultTTL": 10
+        },
+        {
+            "UUID": "fffbebbfa90603000000000000000000",
+            "macAddress": "000000000000",
+            "name": "",
+            "deviceKey": "fffbebbfa9060300529049f1f1bbe9eb",
+            "unicastAddress": "0001",
+            "sno": "00000000",
+            "security": "secure",
+            "cid": "0000",
+            "pid": "0000",
+            "vid": "0000",
+            "crpl": "0000",
+            "features": {
+                "relay": 0,
+                "proxy": 0,
+                "friend": 0,
+                "lowPower": 0
+            },
+            "relayRetransmit": {
+                "count": 0,
+                "interval": 10
+            },
+            "networkTransmit": {
+                "count": 0,
+                "interval": 10
+            },
+            "netKeys": [
+                {
+                    "index": 0,
+                    "updated": false
+                }
+            ],
+            "appKeys": [],
+            "elements": [],
+            "secureNetworkBeacon": false,
+            "configComplete": false,
+            "blacklisted": false,
+            "defaultTTL": 0
+        }
+    ],
+    "groups": [
+        {
+            "name": "Living room",
+            "address": "c000",
+            "parentAddress": "0000"
+        },
+        {
+            "name": "Kitchen",
+            "address": "c001",
+            "parentAddress": "0000"
+        },
+        {
+            "name": "Master bedroom",
+            "address": "c002",
+            "parentAddress": "0000"
+        },
+        {
+            "name": "Secondary bedroom",
+            "address": "c003",
+            "parentAddress": "0000"
+        },
+        {
+            "name": "Balcony",
+            "address": "c004",
+            "parentAddress": "0000"
+        },
+        {
+            "name": "Bathroom",
+            "address": "c005",
+            "parentAddress": "0000"
+        },
+        {
+            "name": "Hallway",
+            "address": "c006",
+            "parentAddress": "0000"
+        },
+        {
+            "name": "others",
+            "address": "c007",
+            "parentAddress": "0000"
+        }
+    ],
+    "scenes": [],
+    "ivIndex": "11223344"
+}
